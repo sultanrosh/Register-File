@@ -1,5 +1,8 @@
 
 # 64-Bit Register File Project
+[![Verilog](https://img.shields.io/badge/Language-Verilog-blue.svg)](https://en.wikipedia.org/wiki/Verilog)
+[![Simulated With](https://img.shields.io/badge/Simulated%20With-Verilator-green.svg)](https://www.veripool.org/wiki/verilator)
+[![Platform](https://img.shields.io/badge/Platform-WSL%20%7C%20Ubuntu-orange.svg)](https://learn.microsoft.com/en-us/windows/wsl/)
 
 This project implements a fully functional **64-bit register file** using Verilog, and tests it using a Verilator-based C++ testbench. The waveform is analyzed using GTKWave. This document explains every corner of the design and simulation process, along with helpful syntax breakdowns and behavioral insights.
 

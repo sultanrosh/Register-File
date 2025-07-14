@@ -167,7 +167,8 @@ void read_regs(Vreg_file* rf, VerilatedVcdC* tfp, int rs1, int rs2)
 
 ## Terminal Output Explained
 
-![Terminal Output](Terminal%20Results.png)
+<img width="584" height="237" alt="Terminal Results" src="https://github.com/user-attachments/assets/0b0a95db-bb8d-4cec-8660-fb557c84a9e9" />
+
 
 - `reg[1]` through `reg[7]` are loaded with expected 64-bit values.
 - `reg[0]` stays 0 even after attempted write — **perfect**.
@@ -176,7 +177,8 @@ void read_regs(Vreg_file* rf, VerilatedVcdC* tfp, int rs1, int rs2)
 
 ## GTKWave Output Explained
 
-![GTKWave Output](GTKWave%20Result.png)
+<img width="1919" height="1028" alt="GTKWave Result" src="https://github.com/user-attachments/assets/15e1b28b-f771-48f6-947e-a86402cf05c0" />
+
 
 ### Key Signals:
 - `we` pulses high to enable writing.
@@ -256,10 +258,12 @@ make
 ## Screenshots
 
 ### Terminal Output
-_(Insert Screenshot Here)_
+<img width="584" height="237" alt="Terminal Results" src="https://github.com/user-attachments/assets/00673627-e428-4199-bdfc-35c67cccbeb1" />
+
 
 ### GTKWave
-_(Insert Screenshot Here)_
+<img width="1919" height="1028" alt="GTKWave Result" src="https://github.com/user-attachments/assets/f370c9e2-fe5b-432e-af00-ba7d0c62a62e" />
+
 
 ---
 
@@ -343,7 +347,8 @@ These abstract common operations:
 
 ## In-Depth Analysis of GTKWave Screenshot
 
-### ![GTKWave Output](GTKWave%20Result.png)
+### <img width="1919" height="1028" alt="GTKWave Result" src="https://github.com/user-attachments/assets/fd3c614e-77ab-4aab-b01e-a87347ba2042" />
+
 
 Let’s walk through what’s happening in the waveform:
 
@@ -374,7 +379,8 @@ Let’s walk through what’s happening in the waveform:
 
 ## In-Depth Analysis of Terminal Output
 
-### ![Terminal Output](Terminal%20Results.png)
+### <img width="584" height="237" alt="Terminal Results" src="https://github.com/user-attachments/assets/1e387999-541b-486c-8d94-b6138bf5fc4c" />
+
 
 Each line like:
 
@@ -421,16 +427,6 @@ Now that you have a register file, the next components to build:
 2. **Instruction Memory** → simulates fetching binary instruction codes
 3. **Control Unit** → decodes opcode, sets `rs1`, `rs2`, `rd`, `we`, etc.
 4. **Program Counter** → tracks which instruction is active
-
----
-
-## Final Screenshots Section
-
-### Terminal Output (Matches Register Values)
-_(Insert Screenshot Here)_
-
-### GTKWave Output (Timing + Signal States)
-_(Insert Screenshot Here)_
 
 ---
 
